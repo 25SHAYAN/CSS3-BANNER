@@ -1,0 +1,85 @@
+/*to make responsove bar navigation we created this media file    supports  mobile,tablet,desktop versions*/
+/*
+1)Desktop = screen width =>1200px+
+2)tab = screen width => 769px to 1024px
+3)mobile = screen width => 0px to 768px
+*/
+
+/* MOBILE */
+@media(max-width:768px) {
+    header{
+        background-color: darkblue;
+    }
+    header>nav>ul>li{
+        display:block;
+    }
+    header>nav>ul{
+        float: none;/*defalut position is left dont take float:left;which gives wwrong op */
+        /*we have to updated the nedded one only in media */
+    }
+    header>nav{
+        padding: 20px;
+        text-align: center;
+    }
+    /*p2.html */
+    .banner1{
+        background-color:lawngreen;
+    }
+    /*p3.html */
+    .banner2{
+        background-image: url(../images/mobile.jpg);
+    }
+    /*p4.html */
+    .banner3{
+     background:linear-gradient( to top,yellow,red);
+    }
+    /*p5.html */
+    .banner4{
+        background:repeating-linear-gradient(45deg,red 30%,pink 50%);
+    }
+    /*p6.html */
+    .banner5{
+    background:url(../images/mobile.jpg) no-repeat left,url(../images/mobile.jpg) no-repeat right;
+    background-size: 50%;
+    }
+}
+
+
+/* TAB */
+@media (min-width:769px) and (max-width:1024px){
+    header{
+        background-color: rebeccapurple;
+    }
+    header>nav>ul{
+        float:none ;
+    }
+    header>nav{
+        padding: 20px;
+        text-align: center;
+    }
+       /*p2.html */
+       .banner1{
+        background-color:rgb(30, 29, 39);
+    }
+      /*p3.html */
+      .banner2{
+        background-image: url(../images/tablet.jpg);
+    }
+    /*p4.html */
+    .banner3{
+        background:linear-gradient(45deg,orange,rgb(15, 170, 236));
+       }
+
+        /*p5.html */
+    .banner4{
+        background:repeating-linear-gradient(75deg,lightgreen 30%,black 50%);
+    }
+
+     /*p6.html */
+     .banner5{
+        background:url(../images/tablet.jpg) no-repeat left,url(../images/laptop.jpg) no-repeat right;
+        background-size: 50%;
+        }
+    }
+
+}
